@@ -2,7 +2,7 @@
 
 During Manual implementation of TF-IDF Algorithm, the formula that i have used to compute IDF is:    
     
-```**IDF(t) = log10(N/ (1 + DF(t)) )**```     
+```**IDF(t) = log(N/ (1 + DF(t)) )**```     
 where N = Number of documents in the corpus    
 and DF(t)= Number of Documents in Corpus containing word term.    
 
