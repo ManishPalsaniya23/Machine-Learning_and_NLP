@@ -68,7 +68,7 @@ def inverse_doc_freq(corpus):
         for list in lst:
             if x in list:
                 count += 1
-        idf[x] = math.log10(num_docs / (count + 1 )) # 1 to avoid 0 in denominator
+        idf[x] = math.log(num_docs / (count + 1 )) # 1 to avoid 0 in denominator
     return idf      
 
 
