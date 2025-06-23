@@ -68,7 +68,7 @@ def inverse_doc_freq(corpus):
         for list in lst:
             if x in list:
                 count += 1
-        idf[x] = math.log(num_docs / (count + 1 )) # 1 to avoid 0 in denominator
+        idf[x] = math.log(num_docs / count) # As i am creating vocab direct from corpus and does not removing any words so no need to add 1 in denominator of log.
     return idf      
 
 
